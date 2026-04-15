@@ -14,7 +14,8 @@ export const invitationContent = {
     hero: {
       handwrittenTitle: "Тойға шақыру",
       subtitle: "Сүндет той · Тілашар",
-      support: "Сүндет тойы мен тілашар қуанышына ортақ болуға шақырамыз.",
+      support:
+        "Сіз(дер)ді ұлымыз Батырханның Сүндет той мен Тілашар тойына арналған ақ дастарханымызға шақырамыз!",
       responseButton: "Қатысу жауабы",
       venueButton: "Мекенжай",
       languageLabel: "Тіл таңдау",
@@ -82,7 +83,8 @@ export const invitationContent = {
       submittingLabel: "Жіберілуде...",
       successMessage: "Рақмет. Жауабыңыз қабылданды.",
       errorNameMessage: "Аты-жөніңізді енгізіп, қайта жіберіп көріңіз.",
-      errorSubmitMessage: "Қазір жіберу мүмкін болмады. Сәлден соң қайта көріңіз.",
+      errorSubmitMessage:
+        "Қазір жіберу мүмкін болмады. Сәлден соң қайта көріңіз.",
     },
     closing: {
       eyebrow: "Соңғы тілек",
@@ -104,7 +106,8 @@ export const invitationContent = {
     hero: {
       handwrittenTitle: "Приглашение",
       subtitle: "Сундет той · Тилашар",
-      support: "Приглашаем разделить радость сундет тоя и тилашара.",
+      support:
+        "Приглашаем вас на праздничный дастархан, посвящённый сундет тою и тилашару нашего сына Батырхана!",
       responseButton: "Ответить",
       venueButton: "Адрес",
       languageLabel: "Выбор языка",
@@ -171,8 +174,10 @@ export const invitationContent = {
       submitLabel: "Отправить ответ",
       submittingLabel: "Отправляем...",
       successMessage: "Спасибо. Ваш ответ принят.",
-      errorNameMessage: "Пожалуйста, укажите имя и попробуйте снова.",
-      errorSubmitMessage: "Сейчас не удалось отправить ответ. Попробуйте немного позже.",
+      errorNameMessage:
+        "Пожалуйста, укажите имя и попробуйте снова.",
+      errorSubmitMessage:
+        "Сейчас не удалось отправить ответ. Попробуйте немного позже.",
     },
     closing: {
       eyebrow: "Доброе пожелание",
