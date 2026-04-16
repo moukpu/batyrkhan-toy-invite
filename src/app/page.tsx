@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { MusicControl } from "@/components/music-control";
 import {
   MaskReveal,
   MotionProvider,
@@ -89,7 +90,7 @@ export default function Home() {
                     delay={0.16}
                     className="hero-character-shell aspect-[4/5]"
                   >
-                    <div className="relative h-full w-full">
+                    <div className="relative h-full w-full translate-x-[15px]">
                       <Image
                         src="/invite/batyrkhan-hero-straight.png"
                         alt={content.hero.leftImageAlt}
@@ -104,6 +105,10 @@ export default function Home() {
                 </div>
 
                 <div className="mx-auto flex max-w-[23rem] flex-col items-center text-center lg:mx-0 lg:max-w-[27rem] lg:items-start lg:text-left">
+                  <SoftReveal delay={0.06} className="hero-music-slot">
+                    <MusicControl />
+                  </SoftReveal>
+
                   <SoftReveal delay={0.08}>
                     <h2 className="hero-name editorial-display text-charcoal/92">
                       {content.boyName}
