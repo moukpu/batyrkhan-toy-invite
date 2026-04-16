@@ -10,7 +10,7 @@ export const RSVP_API_ENDPOINT = "/api/rsvp";
 const MOCK_DELAY_MS = 1400;
 
 export async function submitRsvp(payload: RsvpPayload) {
-  if (process.env.NEXT_PUBLIC_USE_MOCK_RSVP !== "false") {
+  if (process.env.NEXT_PUBLIC_USE_MOCK_RSVP === "true") {
     await new Promise((resolve) => {
       window.setTimeout(resolve, MOCK_DELAY_MS);
     });
@@ -30,9 +30,11 @@ export async function submitRsvp(payload: RsvpPayload) {
     body: JSON.stringify(payload),
   });
 
+  const result = await response.json().catch(() => null);
+
   if (!response.ok) {
-    throw new Error("Қатысу жауабын жіберу кезінде қате пайда болды.");
+    throw new Error(result?.error ?? "Failed to send RSVP.");
   }
 
-  return response.json();
+  return result;
 }
