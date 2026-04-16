@@ -10,10 +10,10 @@ export const invitationContent = {
   kz: {
     boyName: "Батырхан",
     hosts: "Той иелері: Асқар-Рамиля",
-    occasion: "Сүндет тойы · Тілашар",
+    occasion: "Сүндет той · Тілашар",
     hero: {
       handwrittenTitle: "Тойға шақыру",
-      subtitle: "Сүндет тойы · Тілашар",
+      subtitle: "Сүндет той · Тілашар",
       support:
         "Сіз(дер)ді ұлымыз Батырханның Сүндет тойы мен Тілашар тойына арналған ақ дастарханымызға шақырамыз!",
       responseButton: "Қатысу жауабы",
@@ -102,10 +102,10 @@ export const invitationContent = {
   ru: {
     boyName: "Батырхан",
     hosts: "Хозяева торжества: Аскар-Рамиля",
-    occasion: "Сүндет тойы · Тілашар",
+    occasion: "Сүндет той · Тілашар",
     hero: {
       handwrittenTitle: "Приглашение",
-      subtitle: "Сүндет тойы · Тілашар",
+      subtitle: "Сүндет той · Тілашар",
       support:
         "Приглашаем вас на праздничный дастархан по случаю Сүндет тоя и Тілашара Батырхана!",
       responseButton: "Ответить",
