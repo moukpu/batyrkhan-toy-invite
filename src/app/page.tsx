@@ -91,7 +91,7 @@ export default function Home() {
                   >
                     <div className="relative h-full w-full">
                       <Image
-                        src="/invite/batyrkhan-left-original.png"
+                        src="/invite/batyrkhan-hero-straight.png"
                         alt={content.hero.leftImageAlt}
                         fill
                         priority
