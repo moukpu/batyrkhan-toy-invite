@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useId, useRef, useState } from "react";
+import type { Language } from "@/lib/event-data";
 
 const AUDIO_SRC = "/music/hero-invite-track.mp3";
-const CIRCLE_TEXT = "Музыка • Музыка • Музыка • Музыка • ";
 
-export function MusicControl() {
+export function MusicControl({ language }: { language: Language }) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const circleId = useId();
   const [isPlaying, setIsPlaying] = useState(false);
@@ -54,11 +54,19 @@ export function MusicControl() {
     }
   }
 
+  const circleTextSeed =
+    language === "kz" ? "Музыканы қосыңыз" : "Включите музыку";
+  const circleText = `${circleTextSeed} • ${circleTextSeed} • ${circleTextSeed} • `;
+
   const label = unavailable
-    ? "Музыка недоступна"
+    ? language === "kz"
+      ? "Музыка қолжетімсіз"
+      : "Музыка недоступна"
     : isPlaying
-      ? "Пауза"
-      : "Включить музыку";
+      ? language === "kz"
+        ? "Музыканы тоқтату"
+        : "Пауза"
+      : circleTextSeed;
 
   return (
     <>
@@ -85,7 +93,7 @@ export function MusicControl() {
             </defs>
             <text>
               <textPath href={`#${circleId}`} startOffset="0%">
-                {CIRCLE_TEXT}
+                {circleText}
               </textPath>
             </text>
           </svg>

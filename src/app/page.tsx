@@ -56,8 +56,8 @@ export default function Home() {
 
   return (
     <MotionProvider>
-      <main className="invitation-page min-h-screen overflow-x-clip pt-6 sm:pt-8">
-        <section className="story-section ambient-light-surface ambient-light-hero pt-8 sm:pt-10 lg:pt-12">
+      <main className="invitation-page min-h-screen overflow-x-clip pt-3 sm:pt-4 lg:pt-5">
+        <section className="story-section ambient-light-surface ambient-light-hero">
           <div className="page-shell relative z-10">
             <SoftReveal delay={0.04} className="flex justify-end">
               <LanguageSwitcher
@@ -67,7 +67,7 @@ export default function Home() {
               />
             </SoftReveal>
 
-            <header className="mx-auto mt-8 max-w-[30rem] text-center sm:mt-10">
+            <header className="mx-auto mt-4 max-w-[30rem] text-center sm:mt-5 lg:mt-6">
               <SoftReveal>
                 <h1 className="calligraphy hero-script hero-script-refined whitespace-nowrap overflow-visible text-charcoal">
                   {content.hero.handwrittenTitle}
@@ -83,7 +83,7 @@ export default function Home() {
               </SoftReveal>
             </header>
 
-            <div className="mx-auto mt-12 max-w-[56rem] lg:mt-[3.8rem]">
+            <div className="mx-auto mt-8 max-w-[56rem] sm:mt-9 lg:mt-10">
               <div className="grid gap-8 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,0.58fr)] lg:items-center lg:gap-12">
                 <div className="mx-auto w-full max-w-[13.5rem] sm:max-w-[15rem] lg:mx-0 lg:max-w-[18rem]">
                   <SoftReveal
@@ -106,7 +106,7 @@ export default function Home() {
 
                 <div className="mx-auto flex max-w-[23rem] flex-col items-center text-center lg:mx-0 lg:max-w-[27rem] lg:items-start lg:text-left">
                   <SoftReveal delay={0.06} className="hero-music-slot">
-                    <MusicControl />
+                    <MusicControl language={language} />
                   </SoftReveal>
 
                   <SoftReveal delay={0.08}>
